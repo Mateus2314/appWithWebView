@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">appWithWebView</string>
+    <string name="logo">logo</string>
+    <string name="titulotextapp">Calculadora para sistema Fotovoltaicos seguindo a norma NDU 013</string>
+    <string name="dados_do_cliente">Dados do cliente</string>
+    <string name="irradia_o_do_local">Irradiação do local</string>
+    <string name="ndu_015">NDU 015</string>
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitude</string>
+    <string name="voltar">Voltar</string>
+    <string name="seguir">Seguir</string>
+</resources>
