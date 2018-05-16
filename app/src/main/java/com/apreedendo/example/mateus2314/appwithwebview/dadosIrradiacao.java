@@ -22,6 +22,7 @@ public class dadosIrradiacao extends AppCompatActivity {
     WebView wvcresesbsite;
     WebView tabelaIradiacao;
     private Button btcalcularpv;
+    private Button btcastrarirradiacao2;
 
 
     @Override
@@ -41,6 +42,7 @@ public class dadosIrradiacao extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dados_irradiacao);
 
+        btcastrarirradiacao2 = (Button) findViewById(R.id.btcadastrarirradia);
         wvcresesbsite = (WebView) findViewById(R.id.wvcresesbsite);
         tabelaIradiacao = (WebView) findViewById(R.id.wvtabelainrradiacao);
         btcalcularpv = (Button) findViewById(R.id.bt_calcular);
@@ -78,7 +80,12 @@ public class dadosIrradiacao extends AppCompatActivity {
             }
         });
 
-
+        btcastrarirradiacao2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(dadosIrradiacao.this, cadastrarIrradiacao.class));
+            }
+        });
 
 
     }

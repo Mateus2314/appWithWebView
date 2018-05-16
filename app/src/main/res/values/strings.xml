@@ -10,4 +10,6 @@
     <string name="voltar">Voltar</string>
     <string name="seguir">Seguir</string>
     <string name="calcular">Calcular</string>
+    <string name="cadastrar">cadastrar</string>
+    <string name="todo">TODO</string>
 </resources>

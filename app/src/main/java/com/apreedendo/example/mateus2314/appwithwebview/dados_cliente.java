@@ -42,6 +42,7 @@ public class dados_cliente extends AppCompatActivity {
 
         webcresesb = (WebView) findViewById(R.id.wbtabeladados);
         webcresesb.getSettings().setJavaScriptEnabled(true);
+        webcresesb.setWebViewClient(new AppWebViewClients());
         webcresesb.setFocusableInTouchMode(true);
         webcresesb.setFocusable(true);
         webcresesb.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
@@ -49,9 +50,10 @@ public class dados_cliente extends AppCompatActivity {
         webcresesb.getSettings().setDomStorageEnabled(true);
         webcresesb.getSettings().setDatabaseEnabled(true);
         webcresesb.getSettings().setAppCacheEnabled(true);
+        webcresesb.getSettings().setUseWideViewPort(true);
         webcresesb.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
 
-        webcresesb.loadUrl("https://1drv.ms/x/s!AmCK5A3MJcFFo3sMys51-rAKqwta");
+        webcresesb.loadUrl("https://docs.google.com/spreadsheets/d/12co1V3TCZpdEm9wmr8GgNY1Nm_w5zjlA6lk8pXTcmig/edit?usp=sharing");
         webcresesb.setWebViewClient(new WebViewClient());
 
 
@@ -64,7 +66,7 @@ public class dados_cliente extends AppCompatActivity {
         seguircreseb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(dados_cliente.this, dadosIrradiacao.class));
+                startActivity(new Intent(dados_cliente.this, cadsdadosPessoas.class));
             }
         });
 
@@ -76,7 +78,24 @@ public class dados_cliente extends AppCompatActivity {
         });
 
 
+
+
     }
+     public class AppWebViewClients extends WebViewClient{
+         @Override
+         public boolean shouldOverrideUrlLoading(WebView view, String url) {
+
+             view.loadUrl(url);
+             return true;
+         }
+         @Override
+         public void onPageFinished(WebView view, String url) {
+
+             super.onPageFinished(view, url);
+
+         }
+     }
+
 
     void getLocation(){
         if(ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".cadsdadosPessoas">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ProgressBar
+            android:id="@+id/myProgressBardados"
+            android:layout_weight="0.1"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/myImageViewDados"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/wbtabeladadosmudar"
+        android:layout_width="match_parent"
+        android:layout_height="425dp">
+
+    </WebView>
+
+    <Button
+        android:id="@+id/Btvoltardados"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/voltar"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="457dp" />
+
+
+</LinearLayout>
