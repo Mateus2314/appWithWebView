@@ -70,13 +70,13 @@ public class dadosIrradiacao extends AppCompatActivity {
         wvcresesbsite.loadUrl("http://www.cresesb.cepel.br/index.php?section=sundata");
         wvcresesbsite.setWebViewClient(new WebViewClient());
 
-        tabelaIradiacao.loadUrl("https://1drv.ms/x/s!AmCK5A3MJcFFo3sMys51-rAKqwta");
+        tabelaIradiacao.loadUrl("https://docs.google.com/spreadsheets/d/12co1V3TCZpdEm9wmr8GgNY1Nm_w5zjlA6lk8pXTcmig/edit?usp=sharing");
         tabelaIradiacao.setWebViewClient(new WebViewClient());
 
         btcalcularpv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(dadosIrradiacao.this,ndu013.class));
+                startActivity(new Intent(dadosIrradiacao.this,Listadeprodutos.class));
             }
         });
 

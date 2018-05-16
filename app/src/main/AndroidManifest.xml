@@ -25,7 +25,8 @@
         <activity android:name=".dadosIrradiacao" />
         <activity android:name=".ndu013" />
         <activity android:name=".cadsdadosPessoas" />
-        <activity android:name=".cadastrarIrradiacao"></activity>
+        <activity android:name=".cadastrarIrradiacao" />
+        <activity android:name=".Listadeprodutos"></activity>
     </application>
 
 </manifest>
