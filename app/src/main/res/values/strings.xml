@@ -14,4 +14,8 @@
     <string name="todo">TODO</string>
     <string name="testosolarimetro">Caso exista alguma fonte de sombra próximo aos módulos. Deve-se calcular o sombreamento com um solarímetro na região aonde se pretende instalar o sistema fotovoltaico.</string>
     <string name="btfinanciamento">Financiamento</string>
+    <string name="txlistademateriais">Lista de materiais</string>
+    <string name="txproducaopv">Produção do PV</string>
+    <string name="txmudarvalorfinaciamento">Mudar o valor da entrada</string>
+    <string name="webviewparacadastrodefinanciamento">Webviewparacadastrodefinanciamento</string>
 </resources>
