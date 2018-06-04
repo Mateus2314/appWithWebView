@@ -26,7 +26,8 @@
         <activity android:name=".ndu013" />
         <activity android:name=".cadsdadosPessoas" />
         <activity android:name=".cadastrarIrradiacao" />
-        <activity android:name=".Listadeprodutos"></activity>
+        <activity android:name=".Listadeprodutos" />
+        <activity android:name=".preco_sistema"></activity>
     </application>
 
 </manifest>

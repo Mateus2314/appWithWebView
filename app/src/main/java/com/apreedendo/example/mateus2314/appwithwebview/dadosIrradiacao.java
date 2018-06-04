@@ -19,7 +19,6 @@ import android.widget.EditText;
 
 public class dadosIrradiacao extends AppCompatActivity {
 
-    WebView wvcresesbsite;
     WebView tabelaIradiacao;
     private Button btcalcularpv;
     private Button btcastrarirradiacao2;
@@ -27,8 +26,8 @@ public class dadosIrradiacao extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){
-        if (wvcresesbsite.canGoBack() || tabelaIradiacao.canGoBack()){
-            wvcresesbsite.goBack();
+        if (tabelaIradiacao.canGoBack()){
+
             tabelaIradiacao.goBack();
         }else {
             super.onBackPressed();
@@ -43,19 +42,10 @@ public class dadosIrradiacao extends AppCompatActivity {
         setContentView(R.layout.activity_dados_irradiacao);
 
         btcastrarirradiacao2 = (Button) findViewById(R.id.btcadastrarirradia);
-        wvcresesbsite = (WebView) findViewById(R.id.wvcresesbsite);
         tabelaIradiacao = (WebView) findViewById(R.id.wvtabelainrradiacao);
         btcalcularpv = (Button) findViewById(R.id.bt_calcular);
 
-        wvcresesbsite.getSettings().setJavaScriptEnabled(true);
-        wvcresesbsite.setFocusableInTouchMode(true);
-        wvcresesbsite.setFocusable(true);
-        wvcresesbsite.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
-        wvcresesbsite.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
-        wvcresesbsite.getSettings().setDomStorageEnabled(true);
-        wvcresesbsite.getSettings().setDatabaseEnabled(true);
-        wvcresesbsite.getSettings().setAppCacheEnabled(true);
-        wvcresesbsite.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+
 
         tabelaIradiacao.getSettings().setJavaScriptEnabled(true);
         tabelaIradiacao.setFocusableInTouchMode(true);
@@ -67,16 +57,14 @@ public class dadosIrradiacao extends AppCompatActivity {
         tabelaIradiacao.getSettings().setAppCacheEnabled(true);
         tabelaIradiacao.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
 
-        wvcresesbsite.loadUrl("http://www.cresesb.cepel.br/index.php?section=sundata");
-        wvcresesbsite.setWebViewClient(new WebViewClient());
 
-        tabelaIradiacao.loadUrl("https://docs.google.com/spreadsheets/d/12co1V3TCZpdEm9wmr8GgNY1Nm_w5zjlA6lk8pXTcmig/edit?usp=sharing");
+        tabelaIradiacao.loadUrl("https://docs.google.com/spreadsheets/d/16_Kzbl7jr3SVy4953okRJ73vc4NYQSE9MzfdFOvAR5A/edit?usp=sharing");
         tabelaIradiacao.setWebViewClient(new WebViewClient());
 
         btcalcularpv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(dadosIrradiacao.this,Listadeprodutos.class));
+                startActivity(new Intent(dadosIrradiacao.this,MainActivity.class));
             }
         });
 

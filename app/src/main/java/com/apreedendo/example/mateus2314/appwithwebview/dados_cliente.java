@@ -53,7 +53,7 @@ public class dados_cliente extends AppCompatActivity {
         webcresesb.getSettings().setUseWideViewPort(true);
         webcresesb.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
 
-        webcresesb.loadUrl("https://docs.google.com/spreadsheets/d/12co1V3TCZpdEm9wmr8GgNY1Nm_w5zjlA6lk8pXTcmig/edit?usp=sharing");
+        webcresesb.loadUrl("https://docs.google.com/spreadsheets/d/1n2huN-2qVYnIpGSlXUeC1Cxj0IHigCrjjUG7fhvATyk/edit#gid=168253879");
         webcresesb.setWebViewClient(new WebViewClient());
 
 

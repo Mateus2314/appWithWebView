@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     private Button bt_dados_clientes;
     private Button bt_dados_Irradiacao;
     private Button bt_ndu013;
+    private Button bt_calcularwtdados;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         bt_dados_clientes = (Button)findViewById(R.id.bt_dados_clientes);
         bt_dados_Irradiacao = (Button)findViewById(R.id.bt_dadosIrradiacao);
         bt_ndu013 = (Button)findViewById(R.id.bt_ndu013);
+        bt_calcularwtdados = (Button)findViewById(R.id.btcalcularcomdados);
 
         bt_dados_clientes.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,ndu013.class));
+            }
+        });
+
+        bt_calcularwtdados.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, preco_sistema.class));
             }
         });
 
