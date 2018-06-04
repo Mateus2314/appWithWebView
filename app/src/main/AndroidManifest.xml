@@ -27,7 +27,8 @@
         <activity android:name=".cadsdadosPessoas" />
         <activity android:name=".cadastrarIrradiacao" />
         <activity android:name=".Listadeprodutos" />
-        <activity android:name=".preco_sistema"></activity>
+        <activity android:name=".preco_sistema" />
+        <activity android:name=".financiamento"></activity>
     </application>
 
 </manifest>
