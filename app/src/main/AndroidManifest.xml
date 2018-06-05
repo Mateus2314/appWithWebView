@@ -31,7 +31,8 @@
         <activity android:name=".financiamento" />
         <activity android:name=".listademateriais" />
         <activity android:name=".producaopv" />
-        <activity android:name=".financiamentocadastrar"></activity>
+        <activity android:name=".financiamentocadastrar" />
+        <activity android:name=".estruturadomodulo"></activity>
     </application>
 
 </manifest>

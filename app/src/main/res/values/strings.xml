@@ -18,4 +18,5 @@
     <string name="txproducaopv">Produção do PV</string>
     <string name="txmudarvalorfinaciamento">Mudar o valor da entrada</string>
     <string name="webviewparacadastrodefinanciamento">Webviewparacadastrodefinanciamento</string>
+    <string name="btparadescricaoestrutura">Descrição das estruturas</string>
 </resources>
