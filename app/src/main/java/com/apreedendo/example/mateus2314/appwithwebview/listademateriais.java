@@ -58,10 +58,9 @@ public class listademateriais extends AppCompatActivity {
         btestrutura.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(listademateriais.this,estruturadomodulo.class));
+                startActivity(new Intent(listademateriais.this, estruturadomodulo.class));
             }
         });
-
 
 
     }
